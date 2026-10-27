@@ -185,19 +185,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "led-roulette"
-version = "0.1.0"
-dependencies = [
- "cortex-m",
- "cortex-m-rt",
- "embedded-hal 1.0.0",
- "microbit-v2",
- "panic-halt",
- "panic-rtt-target",
- "rtt-target",
-]
-
-[[package]]
 name = "microbit-common"
 version = "0.16.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -242,6 +229,7 @@ dependencies = [
  "cfg-if",
  "cortex-m",
  "embedded-dma",
+ "embedded-hal 0.2.7",
  "embedded-hal 1.0.0",
  "embedded-io",
  "embedded-storage",
@@ -287,12 +275,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "panic-halt"
-version = "1.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a513e167849a384b7f9b746e517604398518590a9142f4846a32e3c2a4de7b11"
-
-[[package]]
 name = "panic-rtt-target"
 version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -332,6 +314,18 @@ name = "rand_core"
 version = "0.9.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "76afc826de14238e6e8c374ddcc1fa19e374fd8dd986b0d2af0d02377261d83c"
+
+[[package]]
+name = "registers"
+version = "0.2.0"
+dependencies = [
+ "cortex-m",
+ "cortex-m-rt",
+ "microbit-v2",
+ "nrf52833-hal",
+ "panic-rtt-target",
+ "rtt-target",
+]
 
 [[package]]
 name = "rtt-target"
