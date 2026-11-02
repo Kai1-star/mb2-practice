@@ -3,3 +3,6 @@ target/
 
 # macOS
 .DS_Store
+
+# Datasheets (kept locally in ~/code/datasheets)
+*.pdf
